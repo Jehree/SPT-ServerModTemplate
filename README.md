@@ -1,28 +1,16 @@
-
-# Mod examples for v4.0.0
-
-A collection of example mods that perform various actions in SPT
-
-# Setup
-The solution has numbered folders, starting at 1 and work downwards to find examples with increasing complexity.
-
-Each mod imports multiple NUGET packages. These are used as libraries of the server code.
-
-### Prerequisites
- [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
- [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) / [Rider](https://www.jetbrains.com/rider/)
- 
-### **Essential Concepts**
-Prioritize understanding Dependency Injection and Inversion of Control, the architectural principles SPT adopts.
-
- - [A quick intro to Dependency Injection](https://www.freecodecamp.org/news/a-quick-intro-to-dependency-injection-what-it-is-and-when-to-use-it-7578c84fa88f/)
- - [Understanding Inversion of Control (IoC) Principle](https://medium.com/@amitkma/understanding-inversion-of-control-ioc-principle-163b1dc97454)
-
-### Build
-`Visual Studio > Build > Rebuild Solution`
-`Rider > TODO`
- 
-## Distribution
-- Build the project in 'Release' mode
-- Copy the folder inside: `mod\bin\Release` into your servers `/mods` folder
-- Start server
+1. Click the green **Use this template** > **Create a new repository** button at the top right of this page
+2. Use something like GitBash to clone your new repo into a folder on your computer (https://git-scm.com/downloads) or download it manually with **Code > Download ZIP**
+   * Make sure you are cloning **YOUR** new repo, not the example repo itself
+3. Rename the following from _ModName_ to your new mod name:
+    * Folder the project is in
+    * **.csproj** file
+    * **.sln** file
+4. Open the **.sln** file with a text editor, CTRL+F for _ModName_ and replace it with your new mod name
+5. Open the **.csproj** file with a text editor, CTRL+F for _ModName_ and replace it with your new mod name
+6. Open your solution by double clicking your **.sln** file, double click **Plugin.cs**
+7. Press CTRL + Shift + F, click Replace in Files
+    * make sure **Look in** is set to **Entire solution**
+    * in Find field, enter: _ModName_
+    * in Replace field, enter your new mod name
+    * click Replace All in bottom right, click yes if prompted
+8. Update Metdata.cs file with correct metadata for your mod
