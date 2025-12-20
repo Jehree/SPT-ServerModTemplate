@@ -4,7 +4,7 @@ using SPTarkov.Server.Core.Models.Logging;
 using SPTarkov.Server.Core.Models.Spt.Mod;
 using SPTarkov.Server.Core.Models.Utils;
 
-namespace ModName;
+namespace ModName.Core;
 
 [Injectable(TypePriority = OnLoadOrder.PreSptModLoader + 1)]
 public class Mod(

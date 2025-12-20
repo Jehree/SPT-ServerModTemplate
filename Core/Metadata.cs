@@ -1,5 +1,6 @@
 using SPTarkov.Server.Core.Models.Spt.Mod;
 
+namespace ModName.Core;
 public record ModMetadata : AbstractModMetadata
 {
     public override string ModGuid { get; init; } = "com.jehree.modname";
