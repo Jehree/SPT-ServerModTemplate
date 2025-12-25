@@ -4,7 +4,7 @@ namespace ModName.Core;
 public record ModMetadata : AbstractModMetadata
 {
     public override string ModGuid { get; init; } = "com.jehree.modname";
-    public override string Name { get; init; } = "Mod Name";
+    public override string Name { get; init; } = "ModName";
     public override string Author { get; init; } = "Jehree";
     public override List<string>? Contributors { get; init; }
     public override SemanticVersioning.Version Version { get; init; } = new("0.0.0");
